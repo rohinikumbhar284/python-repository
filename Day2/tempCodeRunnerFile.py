@@ -1,4 +1,4 @@
-R= "Rohini"
-R= "tina"
-R ="Ritu"
-print(R) 
+a =5
+b =10
+a,b =b,a
+print(a,b)
