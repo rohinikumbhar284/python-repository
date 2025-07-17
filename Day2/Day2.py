@@ -67,14 +67,14 @@ print(_myvar) # valid
 my_var = "I am cheking it "
 print(my_var) # valid
 
-2ndname = "Can it start with no"
-print(2ndname)  # Invalid- bcoz invalid decimal 
+#2ndname = "Can it start with no"
+#print(2ndname)  # Invalid- bcoz invalid decimal 
 
 user-name ="valid or not"
 print(user-name)  #Invalid -cannot assign special character like hypen
                   # User_name is correct
-class = "Class is valid or not"
-print(class) # invalid = it is reserved keyword
+# class = "Class is valid or not"
+# print(class) # invalid = it is reserved keyword
              #Python uses class to define classes
 
 userName = "check it"
@@ -178,8 +178,8 @@ print(f"After re-assignment x :{x} , type = {type(x)}")
 # Try creating a variable named `class` and assign it a value.
 # Observe the error and fix it with a valid name.
 
-class = 200 # class is a reserved keyword in Python
-print(f"Chaking error :{class}")   #and cannot be used as a variable name
+#class = 200 # class is a reserved keyword in Python
+#print(f"Chaking error :{class}")   #and cannot be used as a variable name
 
 class_vari = 400  # If you use any reserved keyword then use Uderscore or any varibale with this 
 print(f"class has number : {class_vari}")
@@ -189,6 +189,13 @@ print(f"class has number : {class_vari}")
 quantity = 5
 price = 150
 print("The cost of {} apples is:{} Rs ".format(quantity ,price))
+################################
+quantity = 5
+price = 150  # with position or named argument
+print("The cost of {a} apples is:{b} Rs ".format(a=quantity ,b=price))
+
+
+
 
 quentity =int(input("Enter your device quentity :"))
 price = float(input("Enter apple price :"))
@@ -200,7 +207,7 @@ Name = "Ashutosh"
 Age = 27
 print("User %s is %d year old." % (Name,Age) )
 
-Assign values to multiple variables using line continuation:
+##Assign values to multiple variables using line continuation:
 # Example:
 # x = 1 + \
 #     2 + \
