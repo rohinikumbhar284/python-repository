@@ -9,7 +9,7 @@
 # Q: Assign values 10, 20, 30 to a, b, c in one line and print them.
 # Q: Assign the value 100 to variables x, y, z in one line. Then print all three.
 ----------------------------------------------------------------------------------
-# Q: Assign a float to a variable and print its type using type() function.
+# Q: Assign a float to a var#iable and print its type using type() function.
 ----------------------------------------------------------------------------------
 # Q: Take two variables a = 5, b = 10 and swap them without using a third variable.
 ----------------------------------------------------------------------------------
@@ -52,11 +52,11 @@
 # Print x.
 
 ----------------------------------------------------------------------------------
-# Q: Assign the result of a mathematical expression (e.g., 10 + 5 * 2) to a variable.
+# Q: #Assign the result of a mathematical expression (e.g., 10 + 5 * 2) to a variable.
 # Print it.
 ----------------------------------------------------------------------------------
 
-# Q: x = y = z = 5 + 10
+ Q: x = y = z = 5 + 10
 # Print x, y, z
 ----------------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@
 ----------------------------------------------------------------------------------
 # Q: Assign a string with special characters like newline (`\n`) and tab (`\t`) to a variable.
 # Print it and observe the effect.
-# Q: Use `print(a, b, sep='-', end='!')` to customize print output.
+ Q: Use `print(a, b, sep='-', end='!')` to customize print output.
 
 ----------------------------------------------------------------------------------
 # Q: Create two variables with the same value and print their `id()` to check if they refer to the same object.
