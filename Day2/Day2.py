@@ -127,7 +127,7 @@ print(f"Hello, {Name}! You are {Age} years old.")
 #  sum, difference, product, and division.
 Num1 =input("Enter first number:")
 Num2 =input("Enter second number")
-print(F"Add is= {Num1+ Num2} Difference is = {Num1+ Num2} Product of ={Num1+ Num2} Division of ={Num1+ Num2}")
+print(F"Add is= {Num1+ Num2} Difference is = {Num1- Num2} Product of ={Num1* Num2} Division of ={Num1+ Num2}")
 
  #Define a variable `PI = 3.14`. Use it to calculate the area of
  # a circle with radius 5.
