@@ -673,9 +673,7 @@
 # n = 2  # remove 2nd element from the end (40)
 # print("Updated list:", remove_nth_from_end(my_list, n))
 #-----------------------------------------------------------------
-# 69.  Kadane's Algorithm: 
-#----------------------------------------------
-# Given a list of numbers, find the contiguous sub-array with the largest sum.
+# 69.  Kadane's Algorithm: Given a list of numbers, find the contiguous sub-array with the largest sum.
 
 # Counting Inversions: In a list of numbers, an inversion is a pair of indices i, j such that i < j and a[i] > a[j]. Count the number of inversions.
 

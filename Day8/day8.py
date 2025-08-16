@@ -320,7 +320,6 @@
 #-------------------------------------------------------------------
 # Create a tuple (1, 2, 3, 4) and print elements in reverse order using a loop.
 # numbers = (1, 2, 3, 4)
-
 # for i in range(len(numbers)-1, -1, -1):
 #     print(numbers[i])
 #---------------------------
