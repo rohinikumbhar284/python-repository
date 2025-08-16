@@ -115,6 +115,10 @@
 #  Return the string unchanged if the given string already begins with "Is".
 #  def check_is_string(s):
 #       if s.startswith("Is"):
+
+
+
+
 #         return s
 #       else:
 #           return "Is"+ s
