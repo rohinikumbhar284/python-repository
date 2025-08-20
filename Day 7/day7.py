@@ -525,18 +525,18 @@
 # prime_numbers = sieve_of_eratosthenes(limit)
 # print(prime_numbers)
 #  58.Matrix Transpose: Given a matrix represented by a nested list, create a new list that is the transpose of the original.
-# matrix = [
-#     [1, 2, 3],
-#     [4, 5, 6],
-#     [7, 8, 9]
-# ]
-# transpose = []
-# for i in range(len(matrix[0])):  # iterate over columns
-#     row = []
-#     for j in range(len(matrix)):  # iterate over rows
-#         row.append(matrix[j][i])
-#     transpose.append(row)
-# print(transpose)
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+transpose = []
+for i in range(len(matrix[0])):  # iterate over columns
+    row = []
+    for j in range(len(matrix)):  # iterate over rows
+        row.append(matrix[i][j])
+    transpose.append(row)
+print(transpose)
 #----------------------------------------------
 # # 59. Anagrams: Given a list of words, group them into anagrams (e.g., ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'] becomes [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]).
 # words = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
@@ -673,8 +673,19 @@
 # n = 2  # remove 2nd element from the end (40)
 # print("Updated list:", remove_nth_from_end(my_list, n))
 #-----------------------------------------------------------------
-# 69.  Kadane's Algorithm: Given a list of numbers, find the contiguous sub-array with the largest sum.
-
+# 69. Kadane's Algorithm: Given a list of numbers, find the contiguous sub-array with the largest sum.
+def kadane(nums):
+    max_current = max_global = nums[0]
+    
+    for num in nums[1:]:
+        max_current = max(num, max_current + num)
+        max_global = max(max_global, max_current)
+    
+    return max_global
+# Example
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+print("Maximum Subarray Sum:", kadane(nums))
+#--------------------------------------------------------------------
 # Counting Inversions: In a list of numbers, an inversion is a pair of indices i, j such that i < j and a[i] > a[j]. Count the number of inversions.
 
 # Permutations: Given a list of distinct numbers, return all possible permutations.
