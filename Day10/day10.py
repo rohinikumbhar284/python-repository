@@ -504,17 +504,149 @@
 #     print("Sorry, country not found in the list.")
 #---------------------------------------------------------------
 # Create a quiz dictionary with 3 questions and answers. Ask user to answer and give score.
-
+# quiz = {
+#     "What is the capital of France?": "Paris",
+#     "What is 5 + 7?": "12",
+#     "Who wrote 'Harry Potter'?": "J.K. Rowling"
+# }
+# score = 0  
+# print("Welcome to the Quiz!\n")
+# for question, answer in quiz.items():
+#     user_answer = input(question + " ")
+#     if user_answer.strip().lower() == answer.lower():  # case-insensitive check
+#         print("Correct!\n")
+#         score += 1
+#     else:
+#         print(f"Wrong! The correct answer is {answer}\n")
+# print(f"Your final score is {score}/{len(quiz)}")
+#--------------------------------------------------------
 # Store student roll numbers and names. Ask the user to enter a roll number → print the name.
-
+# students = {
+#     101: "Rohit",
+#     102: "Sneha",
+#     103: "Amit",
+#     104: "Priya"
+# }
+# roll = int(input("Enter student roll number: "))
+# if roll in students:
+#     print(f"Student Name: {students[roll]}")
+# else:
+#     print("Roll number not found.")
+#----------------------------------------------------------------
 # Create a dictionary of English words and their Hindi meanings. Ask the user to translate a word.
-
+# dictionary = {
+#     "apple": "सेब",
+#     "book": "किताब",
+#     "water": "पानी",
+#     "sun": "सूरज",
+#     "moon": "चाँद"
+# }
+# word = input("Enter an English word to translate into Hindi: ").lower()
+# if word in dictionary:
+#     print(f"The Hindi meaning of '{word}' is: {dictionary[word]}")
+# else:
+#     print("Sorry, this word is not in the dictionary.")
+#----------------------------------------------------------------
 # Treasure Hunt: Store treasures in dictionary keys (Red Room, Blue Room, etc.). Let user guess the correct room.
-
+# import random
+# treasures = {
+#     "Red Room": "Gold Coins",
+#     "Blue Room": "Diamond",
+#     "Green Room": "Silver Sword",
+#     "Yellow Room": "Magic Potion"
+# }
+# treasure_room = random.choice(list(treasures.keys()))
+# print("Welcome to the Treasure Hunt!")
+# print("Rooms available:", ", ".join(treasures.keys()))
+# guess = input("Guess the room that has the treasure: ")
+# if guess == treasure_room:
+#     print(f" Congratulations! You found the treasure: {treasures[treasure_room]}")
+# else:
+#     print(f" Wrong guess! The treasure was in {treasure_room} ({treasures[treasure_room]}).")
+#---------------------------------------------------------------------------------------
 # Create a dictionary of usernames and passwords. Ask user to login by checking dictionary.
-
+# users = {
+#     "rohit": "1234",
+#     "sneha": "abcd",
+#     "amit": "pass123",
+#     "priya": "qwerty"
+# }
+# print("---- Login System ----")
+# username = input("Enter username: ")
+# password = input("Enter password: ")
+# if username in users and users[username] == password:
+#     print("Login successful! Welcome,", username)
+# else:
+#     print("Invalid username or password!")
+#-------------------------------------------------------------------------------
 # Store 5 products and prices. Ask the user to enter product names → print total bill.
+# products = {
+#     "apple": 50,
+#     "banana": 20,
+#     "milk": 40,
+#     "bread": 30,
+#     "egg": 10
+# }
+# print("Available products and prices:")
+# for item, price in products.items():
+#     print(f"{item} - ₹{price}")
+# total = 0
+# # Ask user to enter items
+# while True:
+#     product = input("\nEnter product name to buy (or type 'done' to finish): ").lower()
+    
+#     if product == "done":
+#         break
+#     elif product in products:
+#         qty = int(input(f"Enter quantity of {product}: "))
+#         total += products[product] * qty
+#     else:
+#         print(" Product not available.")
 
+# # Print total bill
+# print("\n------ BILL ------")
+# print(f"Total Amount = ₹{total}")
+#---------------------------------------------------------------------
 # Store cricket players and their scores. Ask the user to guess who scored the highest.
+# players = {
+#     "Virat Kohli": 85,
+#     "Rohit Sharma": 102,
+#     "MS Dhoni": 76,
+#     "KL Rahul": 54,
+#     "Hardik Pandya": 67
+# }
+# highest_player = max(players, key=players.get)
+# highest_score = players[highest_player]
 
+# print("Cricket Match Scores:")
+# for name, score in players.items():
+#     print(f"{name}: {score} runs")
+# guess = input("\nWho do you think scored the highest? ")
+# if guess.strip().lower() == highest_player.lower():
+#     print(f" Correct! {highest_player} scored the highest with {highest_score} runs.")
+# else:
+#     print(f" Wrong! The highest scorer was {highest_player} with {highest_score} runs.")
+#-----------------------------------------------------------------------
 # Store suspects (name, place, item). Write code to find who is the thief (like detective puzzle).
+# suspects = {
+#     "Ravi": {"place": "Library", "item": "Book"},
+#     "Sneha": {"place": "Kitchen", "item": "Knife"},
+#     "Amit": {"place": "Garden", "item": "Wallet"},
+#     "Priya": {"place": "Hall", "item": "Ring"}
+# }
+# clue_place = "Garden"
+# clue_item = "Wallet"
+# print("Detective Puzzle: Find the Thief!\n")
+# print("Suspects List:")
+# for name, details in suspects.items(): 
+#     print(f"{name} was in the {details['place']} with a {details['item']}")  
+# for name, details in suspects.items():  
+#     if details["place"] == clue_place and details["item"] == clue_item: 
+#         thief = name  
+#         break
+# guess = input("\nWho is the thief? ")
+# if guess.strip().lower() == thief.lower():
+#     print(f" Correct! The thief is {thief}.")
+# else:
+#     print(f" Wrong! The real thief is {thief}.")
+#-------------------------------------------------------------------------------  
